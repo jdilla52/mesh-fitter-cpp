@@ -1,0 +1,13 @@
+//
+// Created by Jacques Perrault on 5/5/21.
+//
+
+#ifndef SERVICEWARPPER_CONFIG_H_IN
+#define SERVICEWARPPER_CONFIG_H_IN
+
+#define SOURCE_DIR "${CMAKE_SOURCE_DIR}"
+
+#define TESTING @TESTING@
+
+
+#endif //SERVICEWARPPER_CONFIG_H_IN

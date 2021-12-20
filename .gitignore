@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+
+fitter/cmake-build-debug
+.idea/
