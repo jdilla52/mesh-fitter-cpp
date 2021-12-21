@@ -4,10 +4,12 @@
 
 set(CMAKE_CXX_FLAGS "-std=c++17 -fPIC")
 list(PREPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/thirdparty)
-
+option(LIBIGL_WITH_GLFW "Build target igl::glfw" ON)
+include(libigl)
 add_executable(3dMethodsTest
         main.cpp
         3dMethods.cpp
+        icp.cpp
         )
 
 target_include_directories(3dMethodsTest
@@ -21,6 +23,7 @@ target_link_libraries(3dMethodsTest
         3dMethods
         Eigen3::Eigen
         igl::core
+        igl::glfw
         )
 
 #target_link_libraries(${PROJECT_NAME} PUBLIC igl::core igl::opengl_glfw)

@@ -2,6 +2,7 @@ option(LIBIGL_WITH_GLFW "Build target igl::glfw" ON)
 include(libigl)
 add_library(3dMethods STATIC
         pca.cpp
+        icp.h
         )
 target_link_libraries(3dMethods PRIVATE Eigen3::Eigen igl::core)
 

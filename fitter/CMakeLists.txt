@@ -7,10 +7,6 @@ set(LAMBDA_CONFIG_HEADER ${CMAKE_BINARY_DIR}/methods_config.h)
 message("Generating ${LAMBDA_CONFIG_HEADER}...")
 configure_file(src/3dMethods/methods_config.in ${LAMBDA_CONFIG_HEADER} )
 
-# third party
-#add_subdirectory(thirdparty)
-#include(libigl)
-
 # library
 add_subdirectory(src/3dMethods)
 target_include_directories(3dMethods PUBLIC src)
